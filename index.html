@@ -4,32 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
     <meta name="author" content="Jahshaka">
-    <meta name="description" content="my protofolio">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <meta name="description" content="my website">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
     <title>ayyy!</title>
 </head>
 
 <body>
-    <div class="header">
-        <div class="header__links">
-            <a href="https://github.com/jahshakadev" target="_blank">GitHub</a>
-            <a href="https://twitter.com/sirjahshaka" target="_blank">Twitter</a>
-        </div>
-        <div class="header__content">
-            <h1>hey 👋<br> i'm Jahshaka</h1>
-            <br>
-            <p>developer & professional retard</p>
-            <br>
-        </div>
-    </div>
     <div class="content">
+        <p id="header"> hey, i'm Jahshaka</p>
+        <marquee width="100%" direction="left" height="100px" scrollamount="13.5">
+            14 y/o // gamer // geek // developer // loves <a id="link__react" href="#">reactjs</a> & <a href="#" id="link__flutter">flutter</a>
+        </marquee>
+        <hr>
+        <br>
+        <a href="https://github.com/jahshakadev/" target="_blank"> my github !</a>
+        <br>
+        <a href="https://twitter.com/sirjahshaka" target="_blank"> my twitter !</a>
+        <br>
+        <a href="https://discord.jahshaka.tk/" target="_blank"> my discord !</a>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <p class="tab" id="about" onclick="showContent('aboutme')">about me</p>
+        <div id="aboutme" style="display: none;">
+            <p>hello, i'm jahshaka</p>
+            <p style="margin-bottom: 12px;">i'm 14 y/o hobby developer from germany</p>
+        </div>
+        <p class="tab" id="contact" onclick="showContent('contactme')">contact me</p>
+        <div id="contactme" style="display: none;">
+        <a href="https://twitter.com/sirjahshaka" target="_blank">Twitter</a>
+        <br>
+        <a href="https://discord.jahshaka.tk" target="_blank">Jahshaka#8569</a>
+        </div>
+    </div>
+    
 
-    </div>
-    <div class="footer">
-        
-    </div>
 </body>
 
 </html>
