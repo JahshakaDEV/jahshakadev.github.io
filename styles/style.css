@@ -8,6 +8,18 @@ body {
     font-family: 'Quicksand', sans-serif;
     margin: 0px;
     text-align: center;   
+    animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -64,40 +76,9 @@ a:hover {
 }
 
 #aboutme p {
-   font-size: 14px;
+   font-size: 16px;
 }
 
-#email {
-    border-radius: 25px;
-    border: 1px solid gray;
-}
-
-#name {
-    border-radius: 25px;
-    border: 1px solid gray;
-}
-
-#email {
-    margin-bottom: 10px;
-}
-input::-webkit-input-placeholder {
-    font-size: 14px;
-    padding-left: 10px;
-}
-
-#name {
-    margin-bottom: 10px;
-}
-
-#label__name {
-    padding-right: 95px;
-}
-
-input[type=submit] {
-    border-radius: 25px;
-    height: 30px;
-    width: 80px;
-    border: 0;
-    background-color: #ededeb;
-    cursor: pointer;
+#contactme a {
+    font-size: 16px;
 }
